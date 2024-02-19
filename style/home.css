@@ -1,0 +1,88 @@
+h1{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #5553CC;
+}
+h2{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+h3{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #5553CC;
+}
+p{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.btn a{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    background-color: #5553CC;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 20px;
+}
+.navigatie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.klik {
+    display: none;
+    transform: translateY(0);
+}
+
+.klik.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 160px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 5px;
+    transform: translateY(-100%);
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .klik {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
