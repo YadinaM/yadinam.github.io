@@ -10,6 +10,7 @@ h2{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: #02030E;
 }
 h3{
     font-family: "Fredoka", sans-serif;
@@ -21,8 +22,9 @@ h3{
 p{
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 450;
     font-style: normal;
+    color: #02030E;
 }
 .btn a{
     font-family: "Fredoka", sans-serif;
@@ -54,14 +56,24 @@ p{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 160px;
+    top: 240px;
     right: 0;
-    background-color: #fff;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #DDDDF5;
     z-index: 1;
     padding: 10px;
     border-radius: 5px;
     transform: translateY(-100%);
+    overflow: hidden;
+}
+.klik a{
+    text-decoration: none;
+    color: #02030E;
+    padding: 10px;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 .hamburger {
