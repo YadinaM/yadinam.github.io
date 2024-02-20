@@ -1,3 +1,11 @@
+/*.margin{
+    margin-left: 10%;
+    margin-right: 10%;
+}*/
+body{
+    margin: 0;
+    padding: 0;
+}
 h1{
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
@@ -15,18 +23,22 @@ h2{
 h3{
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     color: #5553CC;
 }
-p{
+p, label{
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
     color: #02030E;
 }
-.btn a{
+label{
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.btn a, .submit a{
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -39,6 +51,7 @@ p{
     display: inline-block;
     padding: 12px 30px;
     border-radius: 20px;
+    margin-bottom: 16px;
 }
 .navigatie {
     display: flex;
@@ -46,12 +59,10 @@ p{
     align-items: center;
     padding: 10px 20px;
 }
-
 .klik {
     display: none;
     transform: translateY(0);
 }
-
 .klik.active {
     display: flex;
     flex-direction: column;
@@ -73,19 +84,85 @@ p{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-
 }
-
 .hamburger {
     display: block;
     cursor: pointer;
 }
-
 .bar {
     width: 25px;
     height: 3px;
     background-color: #333;
     margin: 5px 0;
+}
+.intro, .hoe{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.intro__content__kiboe {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+}
+
+.hoe__content__step img{
+    width: 100%;
+}
+.over {
+    background-color: #FDE4D3; /* Your desired background color */
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.reviews{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #D7EEE8;
+}
+.contact{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #DDDDF5;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input, textarea{
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.submit{
+    background-color: #5553CC;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+footer{
+    background-color: #02030E;
+}
+footer p, footer a, footer h3{
+    color: white;
+    text-decoration: none;
+    font-family: quicksand;
 }
 
 @media only screen and (min-width: 768px) {
