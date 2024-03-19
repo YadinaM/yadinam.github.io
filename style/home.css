@@ -57,7 +57,11 @@ label{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding-top:16px;
+    padding-bottom: 16px;
+}
+.logo{
+    margin-left: 8%;
 }
 .klik {
     display: none;
@@ -88,6 +92,7 @@ label{
 .hamburger {
     display: block;
     cursor: pointer;
+    margin-right: 10%;
 }
 .bar {
     width: 25px;
