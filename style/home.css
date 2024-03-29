@@ -143,6 +143,11 @@ label{
 }
 .hoe__content__step img{
     width: 100%;
+    margin-left: -20px;
+}
+.hoe__content__step.reverse img{
+   
+    margin-right: -40px;
 }
 .hoe__content__arrow__right, .hoe__content__arrow__left{
     display: none;
@@ -267,11 +272,14 @@ footer p, footer a, footer h3{
     }
     .intro__content__kiboe img {
         width: 250px; 
-        margin-right: 20px; 
+        margin-right: 60px; 
     }
     .intro__content__text {
         flex-grow: 1;
     }
+    .intro__content__text p {
+        width: 350px;
+    } 
     .over__content {
         display: flex;
         align-items: center; 
@@ -289,6 +297,7 @@ footer p, footer a, footer h3{
     }    
     .over__content__image img{
         width: 100%;
+        margin-left: 20px;
     } 
     .over__content__image{
         rotate: -20deg;
@@ -336,9 +345,20 @@ footer p, footer a, footer h3{
         width: 55%; 
     }
     .hoe__content__step__text {
-        display: inline-block;
-        margin-left: 5%;
+        display: block;
+        margin-left: 20px;
         margin-top: 20px;
+        width:450px;
+    }
+    .hoe__content__step.reverse .hoe__content__step__text.reverse h3,
+    .hoe__content__step.reverse .hoe__content__step__text.reverse p {
+    margin-left: -50px; 
+    margin-right: 10px;
+    }
+    .hoe__content__step .hoe__content__step__text h3,
+    .hoe__content__step .hoe__content__step__text p {
+    margin-left: 30px; 
+    margin-right: 10px;
     }
     .hoe__content__arrow__right, .hoe__content__arrow__left{
         display: flex;
@@ -378,75 +398,20 @@ footer p, footer a, footer h3{
     .reviews__content__single__title h2{
         font-size: 24px;
     }
-    .contact form{
-        padding:0%;
-    }
-    .contact__content__image1 {
-        display: flex;
-    }
-    .contact__content__image1 img{
-        width: 30%;
-        margin-bottom: -15%;
-        margin-left: 80%;
-        /* rotate: -20deg; */
-    }
-    .contact__content__image2{
-        display: flex;
-    }
-    .contact__content__image2 img{
-        width: 30%;
-        margin-top: -20%;
-        margin-left: -20%;
-        rotate: 20deg;
-    }
-    .contact h2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .submit{
-        width: 50%;
-        margin-left: 25%;
-    }
-    .footer__content__links{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .footer__content__socials{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
 
-@media only screen and (min-width: 1200px) {
-    .intro, .over, .hoe, .reviews, .contact{
-        padding-left: 20%;
-        padding-right: 20%;
-    }
-    .intro__content__kiboe img{
-        width: 300px;
-    }
-    .over__content__image img {
-        width: 500px; 
-    }
-    .hoe {
+    .contact {
         position: relative;
     }
-
     .hoe::before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('../images/planeet_paars.png');
-        background-size: 20%; 
-        background-repeat: no-repeat; 
-        background-position: left-top; 
-        z-index: -1;
+        width: 20%; 
+        height: 20%;
+        background-image: url('../images/planeet_paars.png'); 
+        background-size: cover; 
+        z-index: -1; 
     }
     .hoe::after {
         content: "";
@@ -463,7 +428,192 @@ footer p, footer a, footer h3{
         padding: 1em;
         margin: 1em;
     }
-    .hoe h2{
+    #contact {
+    position: relative;
+    overflow: hidden;
+    }
+    #contact::before {
+        content: ""; 
+        position: absolute; 
+        top: 60%;
+        left: -60px;
+        width: 200px; 
+        height: 200px; 
+        background-image: url('../images/kiboe_sport.svg'); 
+        background-position: bottom left; 
+        background-repeat: no-repeat;
+        transform: rotate(20deg);
+    }
+    #contact::after {
+        content: ""; 
+        position: absolute; 
+        top: 20%;
+        right: -80px;
+        width: 200px;
+        height: 200px;
+        background-image: url('../images/kiboe-huiswerk.svg'); 
+        background-position: center right; 
+        background-repeat: no-repeat;
+        transform: rotate(-20deg);
+    }
+    .contact h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    .contact__content{
+        padding: 1em;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .submit{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .footer__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer__content__links {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: space-between;
+    }
+    .footer__content__socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: -40px;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    .intro, .over, .hoe, .reviews, .contact {
+        padding-left: 15%; 
+        padding-right: 15%; 
+    }
+    .intro__content__kiboe img {
+        width: 250px; 
+        margin-left: -40%; 
+    }
+    .over__content__image img {
+        width: 350px; 
+        height: 250px; 
+        margin-left: 20px;
+    }
+    .hoe::before {
+        content: ""; 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+        background-image: url('../images/planeet_paars.png'); 
+        background-size: 25%; 
+        background-repeat: no-repeat; 
+        background-position: left top; 
+        z-index: -1; 
+    }
+    .hoe::after {
+        content: ""; 
+        position: absolute; 
+        bottom: 0; 
+        right: 0; 
+        width: 20%; 
+        height: 20%; 
+        background-image: url('../images/planeet-oranje.png'); 
+        background-size: cover; 
+        z-index: -1; 
+    }
+    .hoe h2 {
+        margin-bottom: 8%; 
+    }
+    .hoe__content__step img {
+        width: 50%; 
+    }
+    .hoe__content__arrow__right, .hoe__content__arrow__left {
+        margin-left: 50%; 
+    }
+    .hoe__content__arrow__left {
+        margin-left: 15%; 
+    }
+    .reverse {
+        margin-left: 0;
+    }
+    .reverse .hoe__content__step img {
+        margin-left: 0; 
+        margin-right: 5%; 
+    }
+    .reverse .hoe__content__step__text {
+        margin-right: 0; 
+        margin-left: 5%; 
+    }  
+    #contact {
+        position: relative;
+        overflow: hidden;
+        }
+        #contact::before {
+            content: ""; 
+            position: absolute; 
+            top: 40%;
+            left: -60px;
+            width: 350px; 
+            height: 350px; 
+            background-image: url('../images/kiboe_sport.svg'); 
+            background-position: bottom left; 
+            background-repeat: no-repeat;
+            transform: rotate(20deg);
+        }
+        #contact::after {
+            content: ""; 
+            position: absolute; 
+            top: 10%;
+            right: -120px;
+            width: 350px;
+            height: 350px;
+            background-image: url('../images/kiboe-huiswerk.svg'); 
+            background-position: center right; 
+            background-repeat: no-repeat;
+            transform: rotate(-20deg);
+        }
+    .submit{
+        width: 50%;
+        margin-left: 25%;
+    } 
+    .footer__content__links {
+        justify-content: flex-start; 
+    }
+    .footer__content__socials {
+        justify-content: flex-end; 
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .intro, .over, .hoe, .reviews, .contact{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .intro__content__kiboe img{
+        width: 300px;
+        margin-left: -45%;
+    }
+    .intro__content__text {
+        flex-grow: 1;
+    }
+    .intro__content__text p {
+        width: 380px;
+    }
+    .over__content__image img {
+        width: 400px; 
+        height: 300px;
+        margin-left: 200px;
+    }   
+    .contact h2{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -518,36 +668,19 @@ footer p, footer a, footer h3{
     .contact form{
         padding:0%;
     }
-    .contact__content__image1 {
-        display: flex;
-    }
-    .contact__content__image1 img{
-        width: 30%;
-        margin-bottom: -15%;
-        margin-left: 80%;
-    }
-    .contact__content__image2{
-        display: flex;
-    }
-    .contact__content__image2 img{
-        width: 30%;
-        margin-top: -20%;
-        margin-left: -40%;
-        rotate: 20deg;
+    .contact__content{
+        padding: 1em;
+        margin-left: 150px;
     }
     .contact h2{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .footer__content__links{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .footer__content__links {
+        justify-content: flex-start; 
     }
-    .footer__content__socials{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .footer__content__socials {
+        justify-content: flex-end; 
     }
 }
