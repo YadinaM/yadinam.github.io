@@ -121,6 +121,9 @@ label{
 .intro__content__kiboe img{
     width: 80%;
 }
+.intro__content__text img{
+    visibility: hidden;
+}
 .over {
     background-color: #FDE4D3; 
     padding-left: 10%;
@@ -143,10 +146,9 @@ label{
 }
 .hoe__content__step img{
     width: 100%;
-    margin-left: -20px;
+    margin-left: -5px;
 }
 .hoe__content__step.reverse img{
-   
     margin-right: -40px;
 }
 .hoe__content__arrow__right, .hoe__content__arrow__left{
@@ -280,6 +282,9 @@ footer p, footer a, footer h3{
     .intro__content__text p {
         width: 350px;
     } 
+    .intro__content__text img{
+        visibility:visible;
+    }
     .over__content {
         display: flex;
         align-items: center; 
