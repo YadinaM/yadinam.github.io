@@ -104,6 +104,17 @@ label{
     border-radius: 30px;
     text-align: center;
 }
+header{
+    /*background-color: #DDF4F2;*/
+    background-image: url('../images/wavebg2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 16px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .intro, .hoe, .voordelen{
     padding-left: 10%;
     padding-right: 10%;
@@ -270,6 +281,17 @@ footer p, footer a, footer h3{
     }
     .hamburger {
         display: none;
+    }
+    .voordelen__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly
+    }
+    .voordelen__content div{
+        width: 40%;
+    }
+    .voordelen__content img{
+        height: 64px;
     }
 }
 
