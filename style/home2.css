@@ -215,7 +215,7 @@ header{
 .contact__content__image1, .contact__content__image2{
     display: none;
 }
-form{
+/*form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -237,6 +237,18 @@ input, textarea{
     justify-content: center;
     margin-top: 16px;
     margin-bottom: 16px;
+}*/
+.question{
+    background-color: #F5f5f5;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family:"Quicksand", sans-serif
+}
+.answer {
+    display: none;
+    padding: 10px;
+    font-family:"Quicksand", sans-serif
 }
 footer{
     background-color: #02030E;
@@ -370,6 +382,14 @@ footer p, footer a, footer h3{
             background-repeat: no-repeat;
             transform: rotate(-30deg);
         }
+    .question{
+        padding: 14px;
+        margin-bottom: 20px;
+    }
+    .answer {
+        margin-top: -20px;
+        padding: 14px;
+    }
     .footer__content {
         display: flex;
         justify-content: space-between;
