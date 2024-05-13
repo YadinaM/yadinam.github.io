@@ -1,0 +1,399 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #5553CC;
+}
+h2{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #02030E;
+}
+h3{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #5553CC;
+}
+p, label{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    color: #02030E;
+}
+label{
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.btn a, .submit a{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    background-color: #F47621;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+.navigatie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:16px;
+    padding-bottom: 16px;
+}
+.logo{
+    margin-left: 8%;
+}
+.klik {
+    display: none;
+    transform: translateY(0);
+}
+.klik.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 240px;
+    right: 0;
+    background-color: #DDDDF5;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 5px;
+    transform: translateY(-100%);
+    overflow: hidden;
+}
+.klik a{
+    text-decoration: none;
+    color: #02030E;
+    padding: 10px;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.hamburger {
+    display: block;
+    cursor: pointer;
+    margin-right: 10%;
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+}
+#contactnav{
+    color: #f5f5f5;
+    background-color: #5553CC;
+    border-radius: 30px;
+    text-align: center;
+}
+header{
+    /*background-color: #DDF4F2;*/
+    background-image: url('../images/wavebg2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 16px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.hoe, .voordelen, .reviews, .contact{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.intro__content__kiboe{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.intro__content__kiboe img{
+    width: 80%;
+}
+.voordelen{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.voordelen__content{
+    background-color: #F8F7F3;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 8px;
+}
+.voordelen p{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+.hoe{
+    background-color: #FBE3D3;
+}
+.hoe__content__step img{
+    width: 100%;
+    /*margin-left: -5px;*/
+    border-radius: 8px;
+}
+.reviews{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #D7EEE8;
+}
+.reviews_content{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: auto; 
+}
+.reviews__content__single{
+    background-color: #f5f5f5;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    padding: 16px;
+}
+.reviews__content__single__title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+}
+.reviews__content__single__title h2{
+    color: #5553CC;
+}
+.contact{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #DDDDF5;
+}
+.contact__content__image1, .contact__content__image2{
+    display: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input, textarea{
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.submit{
+    background-color: #5553CC;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+footer{
+    background-color: #02030E;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.footer__content{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+footer p, footer a, footer h3{
+    color: white;
+    text-decoration: none;
+    font-family: quicksand;
+}
+.footer__content__links{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+.footer__content__link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top:-10px;
+}
+.footer__content__socials{
+    margin-bottom: 56px;
+}
+
+@media only screen and (min-width: 700px) {
+    .klik {
+        display: flex;
+        flex-direction: row;
+    }
+    .navigatie{
+        margin-right: 100px;
+    }
+    #contactnav{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .hamburger {
+        display: none;
+    }
+    .voordelen__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly
+    }
+    .voordelen__content div{
+        width: 40%;
+    }
+    .voordelen__content img{
+        height: 64px;
+    }
+    .voordelen{
+        margin-bottom: 40px;
+    }
+    .row {
+        display: flex;
+        align-items: center; 
+    }
+    .row img {
+        margin-right: 10px; 
+    }  
+    .hoe h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+    .hoe__content__step {
+        display: flex;
+        flex-direction: row;
+    }
+    .hoe__content__step img {
+        width: 55%; 
+    }
+    .hoe__content__step__text {
+        display: block;
+        /*width:450px;*/
+    }
+    .reverse {
+        flex-direction: row-reverse; 
+    }
+    .hoe__content__step{
+        margin-bottom: 40px;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+    }
+    .reviews h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .reviews__content__single{
+        width: 50%;
+    }
+    .reviews__content__single__title h2{
+        font-size: 24px;
+    }
+    .footer__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer__content__links {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: space-between;
+    }
+    .footer__content__socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: -40px;
+    }
+}
+@media only screen and (min-width: 900px){
+    .over, .hoe, .reviews, .contact{
+        padding-left: 15%; 
+        padding-right: 15%; 
+    }
+    header{
+        padding-bottom: 100px;
+        padding-top: 50px;
+        /*padding-right: 15%;
+        padding-left: 15%;*/
+    }
+    .intro__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 50px;
+    }
+    .intro__content__kiboe img {
+        width: 300px; 
+        /*margin-right: 60px; */
+    }
+    
+    .intro__content__text p, .intro__content__text h1 {
+        width: 300px;
+    } 
+}
+@media only screen and (min-width: 1200px){
+    .hoe, .voordelen, .reviews, .contact {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .hoe__content__step img {
+        width: 45%; 
+    }
+    .hoe__content__step__text {
+        display: block;
+        width: 45%;
+    }
+    header{
+        padding-bottom: 120px;
+        padding-top: 60px;
+        /*padding-right: 20%;
+        padding-left: 20%;*/
+    }
+    .intro__content{
+        gap: 80px;
+    }
+    .intro__content__kiboe img {
+        width: 360px; 
+    }
+    .intro__content__text p, .intro__content__text h1 {
+        width: 320px;
+    } 
+}
