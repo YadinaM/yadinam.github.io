@@ -166,6 +166,9 @@ header{
 .over__content__image{
    rotate: 20deg;
 }*/
+.hoe{
+    background-color: #FBE3D3;
+}
 .hoe__content__step img{
     width: 100%;
     margin-left: -5px;
@@ -173,9 +176,9 @@ header{
 .hoe__content__step.reverse img{
     margin-right: -40px;
 }
-.hoe__content__arrow__right, .hoe__content__arrow__left{
+/*.hoe__content__arrow__right, .hoe__content__arrow__left{
     display: none;
-}
+}*/
 .reviews{
     padding-left: 10%;
     padding-right: 10%;
@@ -324,14 +327,14 @@ footer p, footer a, footer h3{
     .intro__content__text img{
         visibility:visible;
     }
-    .over__content {
+    /*.over__content {
         display: flex;
         align-items: center; 
     }
     .over__content__text {
         flex-grow: 1; 
         padding-right: 20px; 
-    }
+    }*/
     .row {
         display: flex;
         align-items: center; 
@@ -339,17 +342,17 @@ footer p, footer a, footer h3{
     .row img {
         margin-right: 10px; 
     }    
-    .over__content__image img{
+    /*.over__content__image img{
         width: 100%;
         margin-left: 20px;
     } 
     .over__content__image{
         rotate: -20deg;
-    } 
+    } */
     .hoe {
         position: relative;
     }
-    .hoe::before {
+    /*.hoe::before {
         content: "";
         position: absolute;
         top: 0;
@@ -370,7 +373,9 @@ footer p, footer a, footer h3{
         background-image: url('../images/planeet-oranje.png'); 
         background-size: cover; 
         z-index: -1; 
-    }
+    }*/
+    
+    
     .hoe__content {
         padding: 1em;
         margin: 1em;
@@ -404,7 +409,7 @@ footer p, footer a, footer h3{
     margin-left: 30px; 
     margin-right: 10px;
     }
-    .hoe__content__arrow__right, .hoe__content__arrow__left{
+    /*.hoe__content__arrow__right, .hoe__content__arrow__left{
         display: flex;
     }
     .hoe__content__arrow__right img, .hoe__content__arrow__left img{
@@ -417,10 +422,13 @@ footer p, footer a, footer h3{
     .hoe__content__arrow__left{
         margin-left: 20%;
         margin-top:-5%;
-    }
+    }*/
     .reverse {
         flex-direction: row-reverse; 
-        margin-left: 5%;
+        /*margin-left: 5%;*/
+        margin-top: 20px;
+    }
+    .hoe__content__step{
         margin-top: 20px;
     }
     .reverse .hoe__content__step img {
@@ -446,7 +454,7 @@ footer p, footer a, footer h3{
     .contact {
         position: relative;
     }
-    .hoe::before {
+    /*.hoe::before {
         content: "";
         position: absolute;
         top: 0;
@@ -467,7 +475,7 @@ footer p, footer a, footer h3{
         background-image: url('../images/planeet-oranje.png'); 
         background-size: cover; 
         z-index: -1; 
-    }
+    }*/
     .hoe__content {
         padding: 1em;
         margin: 1em;
@@ -550,7 +558,7 @@ footer p, footer a, footer h3{
         height: 250px; 
         margin-left: 20px;
     }
-    .hoe::before {
+    /*.hoe::before {
         content: ""; 
         position: absolute; 
         top: 0; 
@@ -573,19 +581,19 @@ footer p, footer a, footer h3{
         background-image: url('../images/planeet-oranje.png'); 
         background-size: cover; 
         z-index: -1; 
-    }
+    }*/
     .hoe h2 {
         margin-bottom: 8%; 
     }
     .hoe__content__step img {
         width: 50%; 
     }
-    .hoe__content__arrow__right, .hoe__content__arrow__left {
+    /*.hoe__content__arrow__right, .hoe__content__arrow__left {
         margin-left: 50%; 
     }
     .hoe__content__arrow__left {
         margin-left: 15%; 
-    }
+    }*/
     .reverse {
         margin-left: 0;
     }
@@ -642,7 +650,7 @@ footer p, footer a, footer h3{
         padding-left: 20%;
         padding-right: 20%;
     }
-    .intro__content__kiboe img{
+    /*.intro__content__kiboe img{
         width: 300px;
         margin-left: -45%;
     }
@@ -651,12 +659,12 @@ footer p, footer a, footer h3{
     }
     .intro__content__text p {
         width: 380px;
-    }
-    .over__content__image img {
+    }*/
+    /*.over__content__image img {
         width: 400px; 
         height: 300px;
         margin-left: 200px;
-    }   
+    } */  
     .contact h2{
         display: flex;
         justify-content: center;
@@ -675,7 +683,7 @@ footer p, footer a, footer h3{
         margin-left: 5%;
         margin-top: 20px;
     }
-    .hoe__content__arrow__right, .hoe__content__arrow__left{
+    /*.hoe__content__arrow__right, .hoe__content__arrow__left{
         display: flex;
     }
     .hoe__content__arrow__right img, .hoe__content__arrow__left img{
@@ -688,7 +696,7 @@ footer p, footer a, footer h3{
     .hoe__content__arrow__left{
         margin-left: 20%;
         margin-top:-5%;
-    }
+    }*/
     .reverse {
         flex-direction: row-reverse; 
         margin-left: 5%;
@@ -702,7 +710,7 @@ footer p, footer a, footer h3{
         margin-left: 0; 
         margin-right: 5%; 
     }
-    .reviews__content__single{
+    /*.reviews__content__single{
         width: 50%;
     }
     .submit{
@@ -711,8 +719,8 @@ footer p, footer a, footer h3{
     }
     .contact form{
         padding:0%;
-    }
-    .contact__content{
+    }*/
+    /*.contact__content{
         padding: 1em;
         margin-left: 150px;
     }
@@ -726,5 +734,5 @@ footer p, footer a, footer h3{
     }
     .footer__content__socials {
         justify-content: flex-end; 
-    }
+    }*/
 }
