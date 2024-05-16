@@ -525,6 +525,9 @@ footer{
     .footer__content__socials{
         padding-top: 60px;
     }
+    .footer__content__socials{
+        gap: 20px;
+    }
 }
 @media only screen and (min-width: 1200px){
     .hoe, .voordelen, .reviews, .contact {
