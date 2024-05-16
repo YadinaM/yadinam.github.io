@@ -154,13 +154,26 @@ header{
     text-align: center;
 }
 .hoe{
-    background-color: #FBE3D3;
+    /*background-color: #FBE3D3;*/
+    background-color: #DDDDF5;
 }
 .hoe__content__step img{
     width: 100%;
     /*margin-left: -5px;*/
     border-radius: 8px;
 }
+.step {
+    background-color: #5553CC;
+    color: white;
+    width: 26px; 
+    height: 26px; 
+    line-height: 26px; 
+    text-align: center;
+    border-radius: 50%; 
+    margin-right: 4px;
+    display: inline-block; 
+}
+
 .bgitems{
     width: 100%;
     height: 100px;
@@ -250,7 +263,7 @@ input, textarea{
     padding: 10px;
     font-family:"Quicksand", sans-serif
 }
-footer{
+/*footer{
     background-color: #02030E;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -278,6 +291,9 @@ footer p, footer a, footer h3{
 }
 .footer__content__socials{
     margin-bottom: 56px;
+}*/
+footer{
+    background-color: #F5f5f5;
 }
 @media only screen and (min-width: 700px) {
     .klik {
