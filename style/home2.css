@@ -154,8 +154,8 @@ header{
     text-align: center;
 }
 .hoe{
-    /*background-color: #FBE3D3;*/
-    background-color: #DDDDF5;
+    background-color: #FBE3D3;
+    /*background-color: #DDDDF5;*/
 }
 .hoe__content__step img{
     width: 100%;
@@ -179,6 +179,7 @@ header{
     height: 100px;
     padding-bottom: 20px;
     background-image: url('../images/items.png');
+    background-color: #D7EEE8;
     background-size: contain;
     background-repeat: repeat-x;
     background-position: center;
@@ -293,7 +294,43 @@ footer p, footer a, footer h3{
     margin-bottom: 56px;
 }*/
 footer{
-    background-color: #F5f5f5;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #DDDDF5;
+    background-image: url('../images/footerbg.png');;
+}
+.footer__content__socials{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+.footer__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__content__links{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer__content__links a{
+    text-decoration: none;
+    color: #5553CC;
+    font-family: quicksand;
+}
+#line{
+    width: 50%;
+    height: 1px;
+    background-color: #5553CC;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 @media only screen and (min-width: 700px) {
     .klik {
@@ -368,7 +405,7 @@ footer{
     .reviews__content__single__title h2{
         font-size: 24px;
     }
-    #contact {
+    /*#contact {
         position: relative;
         overflow: hidden;
     }
@@ -397,7 +434,7 @@ footer{
             background-position: center right; 
             background-repeat: no-repeat;
             transform: rotate(-30deg);
-        }
+        }*/
     .question{
         padding: 14px;
         margin-bottom: 20px;
@@ -406,7 +443,7 @@ footer{
         margin-top: -20px;
         padding: 14px;
     }
-    .footer__content {
+    /*.footer__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -423,7 +460,37 @@ footer{
         flex-direction: column;
         justify-content: space-between;
         margin-top: -40px;
+    }*/
+    footer {
+        position: relative;
+        overflow: hidden;
     }
+        footer::before {
+            content: ""; 
+            position: absolute; 
+            top: 60%;
+            left: -60px;
+            width: 200px; 
+            height: 210px; 
+            background-image: url('../images/kiboesport.png'); 
+            background-size: cover;
+            background-position: bottom left; 
+            background-repeat: no-repeat;
+            transform: rotate(20deg);
+        }
+        footer::after {
+            content: ""; 
+            position: absolute; 
+            top: 20%;
+            right: -80px;
+            width: 200px;
+            height: 200px;
+            background-image: url('../images/kiboe_was.png'); 
+            background-size: cover;
+            background-position: center right; 
+            background-repeat: no-repeat;
+            transform: rotate(-30deg);
+        }
 }
 @media only screen and (min-width: 900px){
     .over, .hoe, .reviews, .contact{
@@ -451,6 +518,13 @@ footer{
     .intro__content__text p, .intro__content__text h1 {
         width: 300px;
     } 
+    footer{
+        padding-top: 80px;
+        padding-bottom: 10px;
+    }
+    .footer__content__socials{
+        padding-top: 60px;
+    }
 }
 @media only screen and (min-width: 1200px){
     .hoe, .voordelen, .reviews, .contact {
@@ -479,11 +553,20 @@ footer{
     .intro__content__text p, .intro__content__text h1 {
         width: 320px;
     } 
-    #contact::before {
+    /*#contact::before {
         width: 300px; 
         height: 320px; 
     }
     #contact::after {
+        width: 300px;
+        height: 300px;
+    }*/
+    footer::before {
+        top: 40%;
+        width: 300px; 
+        height: 320px; 
+    }
+    footer::after {
         width: 300px;
         height: 300px;
     }
