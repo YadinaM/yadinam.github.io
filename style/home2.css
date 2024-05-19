@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #FEFDFD; /*20% off white*/
 }
 h1{
     font-family: "Fredoka", sans-serif;
@@ -21,7 +22,7 @@ h3{
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    color: #5553CC;
+    color: #F47621;
 }
 p, label{
     font-family: "Quicksand", sans-serif;
@@ -36,11 +37,12 @@ label{
 }
 .btn a, .submit a{
     font-family: "Fredoka", sans-serif;
+    color: #FEFDFD;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     text-decoration: none;
-    color: white;
+    color: F8F7F3;
 }
 .btn{
     background-color: #F47621;
@@ -70,7 +72,7 @@ label{
     position: absolute;
     top: 240px;
     right: 0;
-    background-color: #DDDDF5;
+    background-color: #FEFDFD;
     z-index: 1;
     padding: 10px;
     border-radius: 5px;
@@ -98,7 +100,7 @@ label{
     margin: 5px 0;
 }
 #contactnav{
-    color: #f5f5f5;
+    color: #FEFDFD;
     background-color: #5553CC;
     border-radius: 30px;
     text-align: center;
@@ -163,8 +165,8 @@ header{
     border-radius: 8px;
 }
 .step {
-    background-color: #5553CC;
-    color: white;
+    background-color: #F47621;
+    color: #FEFDFD;
     width: 26px; 
     height: 26px; 
     line-height: 26px; 
@@ -217,7 +219,8 @@ header{
     gap:10px;
 }
 .reviews__content__single__title h2{
-    color: #5553CC;
+    color: #55C9BE;
+    font-weight: 460;
 }
 .contact{
     padding-top: 16px;
@@ -253,7 +256,9 @@ input, textarea{
     margin-bottom: 16px;
 }*/
 .question{
-    background-color: #F5f5f5;
+    background-color: #FEFDFD;
+    color: #5553CC;
+    font-weight: 600;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
