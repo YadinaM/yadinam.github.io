@@ -58,9 +58,8 @@ label{
     align-items: center;
     padding-top:16px;
     padding-bottom: 16px;
-}
-.logo{
-    margin-left: 8%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .klik {
     display: none;
@@ -91,7 +90,6 @@ label{
 .hamburger {
     display: block;
     cursor: pointer;
-    margin-right: 10%;
 }
 .bar {
     width: 25px;
@@ -354,9 +352,6 @@ footer{
         display: flex;
         flex-direction: row;
     }
-    .navigatie{
-        margin-right: 100px;
-    }
     #contactnav{
         padding-left: 20px;
         padding-right: 20px;
@@ -550,6 +545,10 @@ footer{
     }
     .footer__content__socials{
         gap: 20px;
+    }
+    .navigatie{
+        margin-left: 2.5%;
+        margin-right: 2.5%;
     }
 }
 @media only screen and (min-width: 1200px){
