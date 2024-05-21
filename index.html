@@ -184,11 +184,11 @@
     <div id="contact" class="contact">
         <div class="contact__content">
             <h2>Veelgestelde vragen</h2>
-            <div class="question" onclick="toggleAnswer(1)">Kan ik het kinderaccount delen met anderen? <img src="images/dropdown.png" alt="drop down" id="answer1"></div>
+            <div class="question" onclick="toggleAnswer(1)">Kan ik het kinderaccount delen met anderen? <img id="img1" src="images/dropdown.png" alt="drop down"></div>
             <div class="answer" id="answer1">Als premiumgebruiker kan je een bestaand kinderaccount toevoegen aan jouw profiel via de unieke Kiboe-code. Houd overzicht op de routine & voortuigang en bekijk of deel gezamenlijke documenten van je kind. </div>
-            <div class="question" onclick="toggleAnswer(2)">Zijn er kosten verbonden aan de Kiboe-app? <img src="images/dropdown.png" alt="drop down"></div>
+            <div class="question" onclick="toggleAnswer(2)">Zijn er kosten verbonden aan de Kiboe-app? <img id="img2" src="images/dropdown.png" alt="drop down"></div>
             <div class="answer" id="answer2">De basisversie is gratis. Wie extra functionaliteiten en geen advertenties wil kan overschakelen naar premium.</div>
-            <div class="question" onclick="toggleAnswer(3)">Voor welke leeftijden is de app geschikt? <img src="images/dropdown.png" alt="drop down"></div>
+            <div class="question" onclick="toggleAnswer(3)">Voor welke leeftijden is de app geschikt? <img id="img3" src="images/dropdown.png" alt="drop down"></div>
             <div class="answer" id="answer3">De app is ontworpen voor gezinnen met kinderen tussen de 4 en 6 jaar, maar dit is uiteraard ook afhankelijk van de noden van jouw kind.</div>
         </div>
     </div>
@@ -216,6 +216,24 @@
         <div id="line"></div>
         <p style="font-size: 10px; display: flex; justify-content: center; color: #5553CC">Privacy Policy & Terms and conditions</p>
     </footer>
-    <script src="script.js"></script>
+    <!--<script src="script.js"></script>-->
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.klik').classList.toggle('active');
+        });
+
+        function toggleAnswer(id) {
+            var answer = document.getElementById('answer' + id);
+            var img = document.getElementById('img' + id);
+
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+                img.classList.remove('flip-vertical');
+            } else {
+                answer.style.display = 'block';
+                img.classList.add('flip-vertical');
+            }
+        }
+    </script>
 </body>
 </html>

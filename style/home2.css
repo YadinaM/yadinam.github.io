@@ -182,7 +182,7 @@ header{
     height: 100px;
     padding-bottom: 20px;
     background-image: url('../images/items.png');
-    background-color: #D7EEE8;
+    background-color: #DDF4F2;
     background-size: contain;
     background-repeat: repeat-x;
     background-position: center;
@@ -199,7 +199,7 @@ header{
 .reviews{
     padding-top: 16px;
     padding-bottom: 16px;
-    background-color: #D7EEE8;
+    background-color: #DDF4F2;
 }
 .reviews_content{
     display: flex;
@@ -263,7 +263,7 @@ input, textarea{
     font-weight: 600;
     padding: 10px;
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     font-family:"Quicksand", sans-serif;
     display: flex;
     justify-content: space-between;
@@ -277,7 +277,17 @@ input, textarea{
 .answer {
     display: none;
     padding: 10px;
-    font-family:"Quicksand", sans-serif
+    font-family:"Quicksand", sans-serif;
+    background-color:#FEFDFD;
+    color:#02030E;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: relative;
+    top: -14px;
+    margin-bottom: 10px;
+}
+.flip-vertical {
+    transform: rotate(180deg);
 }
 /*footer{
     background-color: #02030E;
