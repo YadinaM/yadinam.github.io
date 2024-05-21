@@ -1,0 +1,2 @@
+User-agent: *
+sitemap: https://www.getkiboe.com//sitemapkiboe.xml
