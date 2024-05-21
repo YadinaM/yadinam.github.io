@@ -6,16 +6,18 @@ body{
 h1{
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 560;
     font-style: normal;
     color: #5553CC;
+    font-size: 2em;
 }
 h2{
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     color: #02030E;
+    font-size: 1.5em;
 }
 h3{
     font-family: "Fredoka", sans-serif;
@@ -165,6 +167,9 @@ header{
     /*margin-left: -5px;*/
     border-radius: 8px;
 }
+.hoe h2{
+    color: #F47621
+}
 .step {
     background-color: #F47621;
     color: #FEFDFD;
@@ -220,9 +225,12 @@ header{
     align-items: center;
     gap:10px;
 }
-.reviews__content__single__title h2{
+.reviews__content__single__title h2 {
     color: #55C9BE;
-    font-weight: 460;
+    font-weight: 400;
+}
+.reviews h2{
+    color: #55C9BE;
 }
 .contact{
     padding-top: 16px;
@@ -257,6 +265,9 @@ input, textarea{
     margin-top: 16px;
     margin-bottom: 16px;
 }*/
+.contact h2{
+    color: #5553CC;
+}
 .question{
     background-color: #FEFDFD;
     color: #5553CC;
@@ -394,7 +405,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 4%;
+        /*margin-bottom: 4%;*/
     }
     .hoe__content__step {
         display: flex;
@@ -515,6 +526,12 @@ footer{
         }
 }
 @media only screen and (min-width: 900px){
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 1.8em;
+    }
     .over, .hoe, .reviews, .contact{
         padding-left: 15%; 
         padding-right: 15%; 
