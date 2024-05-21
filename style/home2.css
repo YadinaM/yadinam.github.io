@@ -70,7 +70,7 @@ label{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 240px;
+    top: 300px;
     right: 0;
     background-color: #FEFDFD;
     z-index: 1;
@@ -110,7 +110,7 @@ header{
     background-image: url('../images/wavebg2.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 16px;
+    padding-top: 32px;
     padding-bottom: 80px;
     display: flex;
     justify-content: center;
@@ -154,6 +154,9 @@ header{
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
+}
+#piep{
+    margin-bottom: -3px;
 }
 .hoe{
     background-color: #FBE3D3;
@@ -211,6 +214,7 @@ header{
     margin-bottom: 16px;
     border-radius: 8px;
     padding: 16px;
+    min-width: 220px;
 }
 .reviews__content__single__title{
     display: flex;
@@ -381,11 +385,11 @@ footer{
     .row img {
         margin-right: 10px; 
     }  
-    .hoe h2{
+    .hoe h2, .reviews h2, .contact h2{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 10%;
+        margin-bottom: 4%;
     }
     .hoe__content__step {
         display: flex;
@@ -407,11 +411,11 @@ footer{
         gap: 30px;
         align-items: center;
     }
-    .reviews h2{
+    /*.reviews h2{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    }*/
     .reviews__content__single{
         width: 50%;
     }
@@ -509,6 +513,12 @@ footer{
     .over, .hoe, .reviews, .contact{
         padding-left: 15%; 
         padding-right: 15%; 
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .voordelen{
+        padding-left: 15%;
+        padding-right: 15%;
     }
     header{
         padding-bottom: 100px;
