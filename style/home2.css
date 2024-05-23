@@ -22,7 +22,7 @@ h2{
 h3{
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     color: #F47621;
 }
@@ -154,6 +154,8 @@ header{
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
+    color:#5553CC;
+    font-weight: 540;
 }
 #piep{
     margin-bottom: -3px;
@@ -563,6 +565,38 @@ footer{
     .intro__content__text p, .intro__content__text h1 {
         width: 300px;
     } 
+    /*.hoe{
+        position: relative;
+    }
+    .hoe::before {
+        content: "";
+        position: absolute;
+        top: -10;
+        left: 0;
+        width: 32%; 
+        height: 32%;
+        rotate: 20deg;
+        background-image: url('../images/egg.svg'); 
+        margin-left: -100px;
+        background-size: contain; 
+        background-repeat: no-repeat;
+        z-index: 1; 
+    }
+    .hoe::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30%; 
+        height: 30%; 
+        background-image: url('../images/egg2.svg'); 
+        margin-right: -100px;
+        margin-bottom: 40px;
+        background-size: contain;
+        background-repeat: no-repeat; 
+        z-index: 1; 
+        overflow: hidden;
+    }*/
     footer{
         padding-top: 80px;
         padding-bottom: 10px;
@@ -585,6 +619,7 @@ footer{
     }
     .hoe__content__step img {
         width: 45%; 
+        z-index: 2;
     }
     .hoe__content__step__text {
         display: block;
@@ -603,7 +638,7 @@ footer{
         width: 360px; 
     }
     .intro__content__text p, .intro__content__text h1 {
-        width: 320px;
+        width: 340px;
     } 
     /*#contact::before {
         width: 300px; 
