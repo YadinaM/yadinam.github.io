@@ -37,6 +37,9 @@ label{
     padding-bottom: 8px;
     padding-top: 8px;
 }
+.hidden {
+    display: none;
+}
 .btn a, .submit a{
     font-family: "Fredoka", sans-serif;
     color: #FEFDFD;
@@ -244,29 +247,6 @@ header{
 .contact__content__image1, .contact__content__image2{
     display: none;
 }
-/*form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-input, textarea{
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: none;
-}
-.submit{
-    background-color: #5553CC;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}*/
 .contact h2{
     color: #5553CC;
 }
@@ -302,35 +282,6 @@ input, textarea{
 .flip-vertical {
     transform: rotate(180deg);
 }
-/*footer{
-    background-color: #02030E;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-.footer__content{
-    margin-left: 10%;
-    margin-right: 10%;
-}
-footer p, footer a, footer h3{
-    color: white;
-    text-decoration: none;
-    font-family: quicksand;
-}
-.footer__content__links{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 32px;
-}
-.footer__content__link{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    margin-top:-10px;
-}
-.footer__content__socials{
-    margin-bottom: 56px;
-}*/
 footer{
     padding-left: 10%;
     padding-right: 10%;
@@ -374,7 +325,6 @@ footer{
 .footer__content__links{
     display: flex;
     flex-direction: row;
-    /*gap: 10px;*/
     width: 100%;
     justify-content: space-between;
     margin-top: 40px;
@@ -436,7 +386,6 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        /*margin-bottom: 4%;*/
     }
     .hoe__content__step {
         display: flex;
@@ -447,7 +396,6 @@ footer{
     }
     .hoe__content__step__text {
         display: block;
-        /*width:450px;*/
     }
     .reverse {
         flex-direction: row-reverse; 
@@ -458,47 +406,12 @@ footer{
         gap: 30px;
         align-items: center;
     }
-    /*.reviews h2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }*/
     .reviews__content__single{
         width: 50%;
     }
     .reviews__content__single__title h2{
         font-size: 24px;
     }
-    /*#contact {
-        position: relative;
-        overflow: hidden;
-    }
-        #contact::before {
-            content: ""; 
-            position: absolute; 
-            top: 60%;
-            left: -60px;
-            width: 200px; 
-            height: 210px; 
-            background-image: url('../images/kiboesport.png'); 
-            background-size: cover;
-            background-position: bottom left; 
-            background-repeat: no-repeat;
-            transform: rotate(20deg);
-        }
-        #contact::after {
-            content: ""; 
-            position: absolute; 
-            top: 20%;
-            right: -80px;
-            width: 200px;
-            height: 200px;
-            background-image: url('../images/kiboe_was.png'); 
-            background-size: cover;
-            background-position: center right; 
-            background-repeat: no-repeat;
-            transform: rotate(-30deg);
-        }*/
     .question{
         padding: 14px;
         margin-bottom: 20px;
@@ -507,24 +420,6 @@ footer{
         margin-top: -20px;
         padding: 14px;
     }
-    /*.footer__content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .footer__content__links {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        justify-content: space-between;
-    }
-    .footer__content__socials {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: -40px;
-    }*/
     footer {
         position: relative;
         overflow: hidden;
@@ -535,32 +430,6 @@ footer{
         padding-right: 10%;
         padding-top: 120px;
     }
-       /* footer::before {
-            content: ""; 
-            position: absolute; 
-            top: 60%;
-            left: -60px;
-            width: 200px; 
-            height: 210px; 
-            background-image: url('../images/kiboesport.png'); 
-            background-size: cover;
-            background-position: bottom left; 
-            background-repeat: no-repeat;
-            transform: rotate(20deg);
-        }
-        footer::after {
-            content: ""; 
-            position: absolute; 
-            top: 20%;
-            right: -80px;
-            width: 200px;
-            height: 200px;
-            background-image: url('../images/kiboe_was.png'); 
-            background-size: cover;
-            background-position: center right; 
-            background-repeat: no-repeat;
-            transform: rotate(-30deg);
-        }*/
     .footer__content__links{
         display: flex;
         flex-direction: column;
@@ -599,8 +468,6 @@ footer{
     header{
         padding-bottom: 100px;
         padding-top: 50px;
-        /*padding-right: 15%;
-        padding-left: 15%;*/
     }
     .intro__content{
         display: flex;
@@ -611,21 +478,10 @@ footer{
     }
     .intro__content__kiboe img {
         width: 300px; 
-        /*margin-right: 60px; */
     }
     .intro__content__text p, .intro__content__text h1 {
         width: 300px;
     } 
-    /*footer{
-        padding-top: 80px;
-        padding-bottom: 10px;
-    }
-    .footer__content__socials{
-        padding-top: 60px;
-    }
-    .footer__content__socials{
-        gap: 20px;
-    }*/
     footer {
         position: relative;
         overflow: hidden;
@@ -663,6 +519,17 @@ footer{
         margin-left: 2.5%;
         margin-right: 2.5%;
     }
+    .hidden {
+        display: flex;
+    }
+    #menu{
+        font-weight: bold;
+        color:#5553CC;
+        margin: 0;
+    }
+    .footer__content__socials{
+        padding-top: 20px;
+    }
 }
 @media only screen and (min-width: 1200px){
     .hoe, .voordelen, .reviews, .contact {
@@ -692,14 +559,6 @@ footer{
     .intro__content__text p, .intro__content__text h1 {
         width: 340px;
     } 
-    /*#contact::before {
-        width: 300px; 
-        height: 320px; 
-    }
-    #contact::after {
-        width: 300px;
-        height: 300px;
-    }*/
     footer{
         padding-left: 20%;
         padding-right: 20%;
