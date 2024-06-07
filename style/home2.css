@@ -129,6 +129,9 @@ header{
     padding-top: 16px;
     padding-bottom: 16px;
 }
+.hoe h2, .reviews h2, .contact h2{
+    margin-bottom: 30px;
+}
 .row {
     display: flex;
     flex-direction: row;
@@ -196,7 +199,7 @@ header{
     background-size: contain;
     background-repeat: repeat-x;
     background-position: center;
-    animation: moveBackground 25s linear infinite;
+    animation: moveBackground 16s linear infinite;
 }
 @keyframes moveBackground {
     0% {
@@ -233,6 +236,8 @@ header{
 .reviews__content__single__title h2 {
     color: #55C9BE;
     font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .reviews h2{
     color: #55C9BE;
@@ -288,13 +293,13 @@ footer{
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #DDDDF5;
-    background-image: url('../images/footerbg.png');;
+    background-image: url('../images/bg20.png');
 }
 .row input{
     padding: 8px;
     border: none;
     border-bottom: #5553CC 1px solid;
-    background-color: #F8F7F3;
+    background-color: #FEFDFD;
     width: 80%;
     font-family: "Quicksand", sans-serif;
     font-weight: lighter;
@@ -386,6 +391,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 50px;
     }
     .hoe__content__step {
         display: flex;
@@ -411,6 +417,8 @@ footer{
     }
     .reviews__content__single__title h2{
         font-size: 24px;
+        margin-bottom: 0;
+        margin-top: 0;
     }
     .question{
         padding: 14px;
@@ -562,7 +570,7 @@ footer{
     footer{
         padding-left: 20%;
         padding-right: 20%;
-        padding-top: 140px;
+        padding-top: 120px;
     }
     footer::before {
         top: 40%;
