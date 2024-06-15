@@ -40,6 +40,9 @@ label{
 .hidden {
     display: none;
 }
+#logo{
+    width: 120px;
+}
 .btn a, .submit a{
     font-family: "Fredoka", sans-serif;
     color: #FEFDFD;
@@ -165,6 +168,7 @@ header{
 }
 #piep{
     margin-bottom: -3px;
+    width: 200px;
 }
 .hoe{
     background-color: #FBE3D3;
@@ -308,6 +312,11 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
+.newsletter img {
+    width: 46px;
+    height: 46px;
+
+}
 .newsletter{
     margin-top: 40px;
 }
@@ -339,6 +348,10 @@ footer{
     text-decoration: none;
     color: #5553CC;
     font-family: quicksand;
+}
+.footer__content__link img{
+    width: 32px;
+    height: 32px;
 }
 #line{
     width: 50%;
@@ -375,7 +388,7 @@ footer{
         width: 40%;
     }
     .voordelen__content img{
-        height: 64px;
+        width: 64px;
     }
     .voordelen{
         margin-bottom: 40px;
