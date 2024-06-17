@@ -298,6 +298,8 @@ footer{
     padding-bottom: 40px;
     background-color: #DDDDF5;
     background-image: url('../images/bg20.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .row input{
     padding: 8px;
